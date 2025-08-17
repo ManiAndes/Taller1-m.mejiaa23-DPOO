@@ -108,7 +108,9 @@ public class Surtidor
 
         // Actualizar la cantidad de gasolina vendida en el surtidor
         double cantidadAnterior = galonesVendidos.get( nombreTipoGasolina );
-        galonesVendidos.put( nombreTipoGasolina, cantidadAnterior - cantidadEntregada );
+        
+        // Suma la cantidad de gasolina vendida por un surtidor
+        galonesVendidos.put( nombreTipoGasolina, cantidadAnterior + cantidadEntregada );
 
         return precio;
     }
